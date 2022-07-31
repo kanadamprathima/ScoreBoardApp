@@ -1,16 +1,31 @@
 .App {
   text-align: center;
 }
+@import "./style/config";
+html,
+body {
+  color: $text-color;
+  font-family: "Alatsi", serif;
+  font-size: 18px; // the "base size" = 1rem
+  line-height: 140%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  // resets
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3 {
+  margin: 0 0 (3 * $vertical-space) 0;
+}
+
+p,
+ul,
+ol,
+li {
+  // vertical rhythm defined by bottom margins
+  margin: 0 0 $vertical-space 0;
 }
 
 .App-header {

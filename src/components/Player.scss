@@ -1,0 +1,33 @@
+@import "../style/config";
+.player {
+  display: block;
+  background: $light;
+  position: relative;
+}
+p {
+  margin: 0;
+}
+.percentage_coloring {
+  position: absolute;
+  height: 0.4rem;
+  background: $primary;
+  background: linear-gradient(90deg, $secondary, $primary);
+  transition: all 0.2s ease;
+}
+:hover.percentage_coloring {
+  transform: scale(1, 2);
+  background: linear-gradient(90deg, #bf0073, #f20f0f);
+}
+button {
+  //position: absolute;
+  background: transparent;
+  font-family: inherit;
+  font-size: initial;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: $primary;
+  color: white;
+  :hover {
+    background: #f20f0f;
+  }
+}
