@@ -12,7 +12,7 @@ const Scoreboard = () => {
   const [players, set_players] = useState([
     { id: 1, name: "violeta", score: 11 },
     { id: 2, name: "Eszter", score: 50 },
-    { id: 3, name: "Jeroen v2", score: 400 },
+    { id: 3, name: "Jeroen v2", score: 40 },
     { id: 4, name: "Lisa", score: 42 },
   ]);
   const [sort_by, set_sort_by] = useState("score");
